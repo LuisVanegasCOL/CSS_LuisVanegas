@@ -1,0 +1,22 @@
+h1{
+    color: aquamarine; background-color: blueviolet; font-variant-caps: all-petite-caps;
+}
+h3{
+    color: rgb(73, 72, 85); background-color: #352bc7; font-variant-caps: all-petite-caps;
+}
+
+input{
+    width: 100px;height: 50px; border: 4px solid #1a1b1a; text-align: center ;
+}
+label {
+    color :aquamarine; background-color: blueviolet; font-variant-caps: all-petite-caps;
+}
+
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}

@@ -1,0 +1,36 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    border: solid 2px black;
+    padding: 10px;
+    background-color: blueviolet;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    background-color: orange;
+    font-size: 5rem;
+    align-self:flex-end;
+}
+
+.child-1 {
+    order: 1;
+   
+
+}
+
+.child-2 {
+    order:2;
+}
+
+.child-3 {
+    order: 3;
+}

@@ -1,0 +1,114 @@
+/* Estilos generales */
+
+/* Define el color de fondo y la fuente predeterminada del cuerpo de la página */
+body {
+    background-color: antiquewhite; /* Fondo de color crema */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+/* Contenedor principal que utiliza Grid */
+.container {
+    color: white; /* Texto en color blanco */
+    height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+    width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
+    display: grid; /* Activa el modelo de cuadrícula */
+    gap: 5px; /* Espaciado entre los elementos de la cuadrícula */
+}
+
+/* Estilos para cada sección del layout */
+.header {
+    background: rgb(22, 21, 92); /* Color de fondo azul oscuro */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Agrega espacio alrededor del contenido */
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.menu {
+    background: rgb(218, 47, 90); /* Color rojo */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Agrega espacio alrededor del contenido */
+}
+
+.hero {
+    background: rgb(54, 54, 226); /* Azul brillante */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.main {
+    background: rgb(11, 12, 78); /* Azul oscuro */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+.banner {
+    background: rgb(141, 148, 41); /* Amarillo mostaza */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.extra {
+    background: rgb(47, 177, 97); /* Verde */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Agrega espacio alrededor del contenido */
+}
+
+.image {
+    background: rgb(54, 207, 200); /* Azul turquesa */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Agrega espacio alrededor del contenido */
+}
+
+/* Estilos responsivos para diferentes tamaños de pantalla usando grid-column y grid-row */
+
+/* Diseño para dispositivos móviles (hasta 425px de ancho) */
+@media (max-width: 425px) {
+    .container {
+        grid-template-columns: 1fr; /* Una única columna */
+        grid-template-rows: auto auto auto auto auto auto auto; /* Siete filas */
+    }
+    .header { grid-column: 1; grid-row: 1; } /* Ubica el header en la primera fila */
+    .menu { grid-column: 1; grid-row: 2; } /* Ubica el menu en la segunda fila */
+    .hero { grid-column: 1; grid-row: 3; } /* Ubica el hero en la tercera fila */
+    .main { grid-column: 1; grid-row: 4; } /* Ubica el main en la cuarta fila */
+    .banner { grid-column: 1; grid-row: 5; } /* Ubica el banner en la quinta fila */
+    .extra { grid-column: 1; grid-row: 6; } /* Ubica el extra en la sexta fila */
+    .image { grid-column: 1; grid-row: 7; } /* Ubica la imagen en la séptima fila */
+}
+
+/* Diseño para tablets (mínimo 768px de ancho) */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+        grid-template-rows: auto auto auto auto auto; /* Cinco filas */
+    }
+    .header { grid-column: 1 / span 2; grid-row: 1; }
+    .hero { grid-column: 1 / span 2; grid-row: 2; }
+    .menu { grid-column: 1; grid-row: 3; }
+    .main { grid-column: 2; grid-row: 3; }
+    .banner { grid-column: 1 / span 2; grid-row: 4; }
+    .extra { grid-column: 1; grid-row: 5; }
+    .image { grid-column: 2; grid-row: 5; }
+}
+
+/* Diseño para desktops (mínimo 1024px de ancho) */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 2fr 1fr; /* Tres columnas */
+        grid-template-rows: auto auto auto auto; /* Cuatro filas */
+    }
+    .header { grid-column: 1 / span 2; grid-row: 1; }
+    .menu { grid-column: 3; grid-row: 1; }
+    .hero { grid-column: 1 / span 3; grid-row: 2; }
+    .main { grid-column: 1 / span 2; grid-row: 3; }
+    .image { grid-column: 3; grid-row: 3; }
+    .banner { grid-column: 1 / span 2; grid-row: 4; }
+    .extra { grid-column: 3; grid-row: 4; }
+}

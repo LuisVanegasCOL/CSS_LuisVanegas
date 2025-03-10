@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    /* Fondo oscuro para resaltar los colores */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+}
+
+div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    /* Fusiona los colores como luz */
+    opacity: 0.9;
+}
+
+#div1 {
+    background-color: red;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+
+}
+
+
+#div2 {
+    background-color: greenyellow;
+    top: 20px;
+    left: 100px;
+    z-index: 2;
+}
+
+#div3 {
+    background-color: blue;
+    top: 80px;
+    left: 60px;
+    z-index: 1;
+
+}

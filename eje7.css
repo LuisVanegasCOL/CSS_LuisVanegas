@@ -1,0 +1,23 @@
+div{
+    border-width: 10px;
+    border-right-style: dashed;
+    border-right-color: blue;
+    border-top-style: dotted;
+    border-top-color: green;
+    border-left-style: double;
+    border-left-color: black;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    padding-top: 40px;
+    padding-right: 35px;
+    padding-left: 42px;
+    padding-bottom: 50px;       
+    margin: 10%;
+
+}
+h1{
+    color: rgb(18, 18, 19);
+}
+body{
+    background-color: aliceblue;
+}

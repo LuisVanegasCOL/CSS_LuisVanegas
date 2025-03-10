@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+}
+
+.imagen {
+    float: right;
+    margin-left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.texto {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    clear: both; /* Esta propiedad asegura que el texto no quede sobre los elementos flotantes */
+}

@@ -1,0 +1,82 @@
+body {
+    background-color: antiquewhite;
+}
+
+#diana {
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+#anillo1 {
+    position: absolute;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    background-color: red;
+    top: 5%;
+    left: 5%;
+}
+
+#anillo2 {
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+}
+
+#anillo3 {
+    position: absolute;
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    background-color: red;
+    top: 15%;
+    left: 15%;
+    z-index: 2;
+}
+
+#anillo4 {
+    position: absolute;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    top: 20%;
+    left: 20%;
+    z-index: 3;
+}
+
+#anillo5 {
+    position: absolute;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    top: 25%;
+    left: 25%;
+    z-index: 4;
+}
+
+#centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 5;
+    margin-top: -15px;
+    margin-left: -15px;
+}

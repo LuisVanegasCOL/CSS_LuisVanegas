@@ -1,0 +1,121 @@
+/* Estilo global */
+body {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedores */
+.contenedor {
+    margin: 10px auto;
+    position: relative;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+
+/* Estilos de contenedores con tamaños diferentes en porcentaje */
+#contenedor1, #contenedor2, #contenedor3, #contenedor4 {
+    width: 90%; /* Usamos porcentaje para adaptarse a diferentes resoluciones */
+}
+
+/* Estilos para los divs dentro de los contenedores */
+.div {
+    margin: 2%;
+    height: 20%;
+    border: 2px solid black;
+    position: relative;
+    display: inline-block; /* Para que se alineen correctamente */
+}
+
+/* Colores de fondo para cada div */
+#div1 {
+    background-color: gold;
+}
+
+#div2 {
+    background-color: gold;
+}
+
+#div3 {
+    background-color: rgb(255, 0, 149);
+}
+
+#div4 {
+    background-color: blue;
+}
+
+#div5 {
+    background-color: blue;
+}
+
+#div6 {
+    background-color: blue;
+}
+
+#div7 {
+    background-color: peru;
+}
+
+#div8 {
+    background-color: peru;
+}
+
+#div9 {
+    background-color: peru;
+}
+
+#div10 {
+    background-color: peru;
+}
+
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    /* Ajustes para pantallas pequeñas (320px) */
+    .contenedor {
+        width: 100%;
+    }
+
+    .div {
+        width: 45%; /* Los divs ocuparán el 45% del ancho de la pantalla */
+        height: 25%; /* Ajustamos el tamaño de los divs */
+        margin: 5%; /* Mayor espacio entre los divs */
+    }
+
+    #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10 {
+        display: block; /* Cada div ocupará una línea por completo */
+        margin-bottom: 10px; /* Separación entre los divs */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Ajustes para pantallas medianas (768px) */
+    .contenedor {
+        width: 85%;
+    }
+
+    .div {
+        width: 30%; /* Los divs ocuparán el 30% del ancho de la pantalla */
+        height: 20%; /* Ajustamos el tamaño de los divs */
+    }
+
+    #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10 {
+        display: inline-block; /* Los divs se alinearán en fila */
+        margin-bottom: 5%; /* Separación entre los divs */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Ajustes para pantallas grandes (1024px) */
+    .contenedor {
+        width: 80%;
+    }
+
+    .div {
+        width: 22%; /* Los divs ocuparán el 22% del ancho de la pantalla */
+        height: 20%; /* Ajustamos el tamaño de los divs */
+    }
+
+    #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10 {
+        display: inline-block; /* Los divs se alinearán en fila */
+    }
+}
