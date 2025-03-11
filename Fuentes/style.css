@@ -1,0 +1,21 @@
+
+p {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    word-spacing: 10px;
+    
+}
+
+h1{
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-size: 80px;
+   
+    Writing-mode: vertical-lr;
+    
+}
+
+h2{
+    font-family: "Doto";
+    letter-spacing: 10px;
+}

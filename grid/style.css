@@ -22,8 +22,6 @@ body {
     background: rgb(22, 21, 92); /* Color de fondo azul oscuro */
     text-align: center; /* Centra el texto */
     padding: 10px; /* Agrega espacio alrededor del contenido */
-    grid-column: 1 / span 2;
-    grid-row: 1;
 }
 
 .menu {
@@ -36,8 +34,7 @@ body {
     background: rgb(54, 54, 226); /* Azul brillante */
     text-align: center; /* Centra el texto */
     padding: 20px; /* Agrega espacio alrededor del contenido */
-    grid-column: 1 / span 2;
-    grid-row: 2;
+    
 }
 
 .main {
@@ -50,8 +47,7 @@ body {
     background: rgb(141, 148, 41); /* Amarillo mostaza */
     text-align: center; /* Centra el texto */
     padding: 20px; /* Agrega espacio alrededor del contenido */
-    grid-column: 1 / span 2;
-    grid-row: 4;
+    
 }
 
 .extra {
